@@ -8,9 +8,8 @@ import { ReactiveFormsModule } from '@angular/forms'
 
 const routes: Routes = [
     {
-        path: '',
+        path: '', component: AdminComponent,
         children: [
-            {path: '', component: AdminComponent},
             { path: 'classmgmt', component: AdminClassmgmtComponent },
             { path: 'exams', component: AdminExamsComponent },
             { path: 'timetable', component: AdminTimetableComponent },
@@ -26,7 +25,7 @@ const routes: Routes = [
 
 @NgModule({
     imports: [ReactiveFormsModule, RouterModule.forChild(routes)],
-    exports: [RouterModule,ReactiveFormsModule]
+    exports: [RouterModule, ReactiveFormsModule]
 })
 export class AdminRoutingModule { }
 export const AdminRoutingComponent = [AdminComponent, AdminClassmgmtComponent, AdminExamsComponent, AdminTimetableComponent];

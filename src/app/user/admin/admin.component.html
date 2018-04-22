@@ -1,14 +1,13 @@
-<header class="header">Admin Pannel</header>
+<!-- <header class="header">Admin Pannel</header>
 <div class="row profile">
   <div class="col-md-3 aside ">
     <div class="profile-sidebar">
-      <!-- SIDEBAR USERPIC -->
+      
       <div class="profile-userpic">
         <img src="http://keenthemes.com/preview/metronic/theme/assets/admin/pages/media/profile/profile_user.jpg" class="img-responsive"
           alt="">
       </div>
-      <!-- END SIDEBAR USERPIC -->
-      <!-- SIDEBAR USER TITLE -->
+    
       <div class="profile-usertitle">
         <div class="profile-usertitle-name">
           Vipin Sahu
@@ -17,14 +16,12 @@
           Developeraside
         </div>
       </div>
-      <!-- END SIDEBAR USER TITLE -->
-      <!-- SIDEBAR BUTTONS -->
+      
       <div class="profile-userbuttons">
         <button type="button" class="btn btn-success btn-sm">Follow</button>
         <button type="button" class="btn btn-danger btn-sm">Message</button>
       </div>
-      <!-- END SIDEBAR BUTTONS -->
-      <!-- SIDEBAR MENU -->
+      
       <div class="profile-usermenu">
         <ul class="nav">
           <li>
@@ -91,7 +88,7 @@
         </ul>
       </div>
 
-      <!-- END MENU -->
+       
     </div>
   </div>
   <div class="col-md-9">
@@ -109,11 +106,23 @@
       <span class="hint-text">Copyright &copy; 2017 </span>
       <span class="font-montserrat">CMS</span>.
       <span class="hint-text">All rights reserved. </span>
-      <!--<span class="sm-block"><a href="/terms-of-use" class="m-l-10 m-r-10">Terms of use</a></span>-->
+     
     </p>
-    <!--  <p class="small no-margin pull-right sm-pull-reset">
-              <a href="http://www.trancis.com/">Trancis</a> <span class="hint-text">&amp; Made by Trancis Group ®</span>
-            </p> -->
+     
     <div class="clearfix"></div>
+  </div>
+</div> -->
+
+<div class="wrapper">
+  <div class="sidebar" data-color="danger" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
+    <app-admin-sidebar></app-admin-sidebar>
+    <div class="sidebar-background" style="background-image: url(../assets/img/sidebar-4.jpg)"></div>
+  </div>
+  <div class="main-panel">
+    <app-navbar></app-navbar>
+    <router-outlet></router-outlet>
+    <div class="footer">
+      <app-footer></app-footer>
+    </div>
   </div>
 </div>

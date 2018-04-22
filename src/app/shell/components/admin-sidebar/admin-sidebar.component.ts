@@ -8,32 +8,36 @@ declare interface RouteInfo {
     class: string;
 }
 export const ROUTES: RouteInfo[] = [
-    { path: 'registration', title: 'Dashboard',  icon: 'dashboard', class: '' },
-    { path: 'user-profile', title: 'User Profile',  icon:'person', class: '' },
-    { path: 'table-list', title: 'Table List',  icon:'content_paste', class: '' },
-    { path: 'typography', title: 'Typography',  icon:'library_books', class: '' },
-    { path: 'icons', title: 'Icons',  icon:'bubble_chart', class: '' },
-    { path: 'maps', title: 'Maps',  icon:'location_on', class: '' },
-    { path: 'notifications', title: 'Notifications',  icon:'notifications', class: '' }
+    { path: 'registration', title: 'Dashboard', icon: 'dashboard', class: '' },
+    { path: 'user-profile', title: 'User Profile', icon: 'person', class: '' },
+    { path: 'classmgmt', title: 'Class Management', icon: 'content_paste', class: '' },
+    { path: 'exams', title: 'Exmas', icon: 'library_books', class: '' },
+    { path: 'timetable', title: 'Time Table', icon: 'bubble_chart', class: '' },
+    { path: 'admin-student/admin-manage-student', title: 'Manage Student', icon: 'bubble_chart', class: '' },
+    { path: 'admin-student/admin-manage-subject', title: 'Manage Subject', icon: 'bubble_chart', class: '' },
+    { path: 'admin-student/admin-manage-scholarship', title: 'Student Scholarship', icon: 'location_on', class: '' },
+    { path: 'admin-professor/admin-manage-professor', title: 'Manage Professor', icon: 'location_on', class: '' },
+
+    { path: 'notifications', title: 'Notifications', icon: 'notifications', class: '' }
 ];
 
 @Component({
-  selector: 'app-admin-sidebar',
-  templateUrl: './admin-sidebar.component.html',
-  styleUrls: ['./admin-sidebar.component.css']
+    selector: 'app-admin-sidebar',
+    templateUrl: './admin-sidebar.component.html',
+    styleUrls: ['./admin-sidebar.component.css']
 })
 export class AdminSidebarComponent implements OnInit {
-  menuItems: any[];
+    menuItems: any[];
 
-  constructor() { }
+    constructor() { }
 
-  ngOnInit() {
-    this.menuItems = ROUTES.filter(menuItem => menuItem);
-  }
-  isMobileMenu() {
-      if ($(window).width() > 991) {
-          return false;
-      }
-      return true;
-  };
+    ngOnInit() {
+        this.menuItems = ROUTES.filter(menuItem => menuItem);
+    }
+    isMobileMenu() {
+        if ($(window).width() > 991) {
+            return false;
+        }
+        return true;
+    };
 }
