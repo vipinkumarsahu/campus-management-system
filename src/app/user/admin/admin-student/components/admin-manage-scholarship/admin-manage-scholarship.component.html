@@ -1,0 +1,43 @@
+<div class="container">
+  <h2>Userdata</h2>
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <div class="col-md-10 form-group">
+      <label>Name</label>
+      <input type="text" #refname class="form-control" formControlName="name" />
+      <div *ngIf="userForm.controls['name'].hasError('required')" class="alert alert-danger">
+        Name field can't be empty
+      </div>
+      <div *ngIf="userForm.controls['name'].hasError('minlength')" class="alert alert-danger">
+        Name can't be less than 4 charecter
+      </div>
+      <div *ngIf="userForm.controls['name'].hasError('maxlength')" class="alert alert-danger">
+        Name can't not be more than 10 length
+      </div>
+    </div>
+    <div class="col-md-10 form-group">
+      <label>Email</label>
+      <input type="text" #refemail class="form-control" formControlName="email" />
+    </div>
+    <div formGroupName="address">
+      <div class="col-md-10 form-group">
+        <label>Street</label>
+        <input type="text" #refstreet class="form-control" formControlName="street" />
+      </div>
+      <div class="col-md-10 form-group">
+        <label>City</label>
+        <input type="text" #refcity class="form-control" formControlName="city" />
+      </div>
+      <div class="col-md-10 form-group">
+        <label>PostalCode</label>
+        <input type="text" #refpostalcode class="form-control" formControlName="postalcode" />
+        <div *ngIf="userForm.controls['address'].controls['postalcode'].hasError('pattern')" class="alert alert-danger">
+          PostalCode is 6 digit No.
+        </div>
+      </div>
+    </div>
+    <div class="col-md-10">
+      <input type="submit" [disabled]="!userForm.valid" value="Submit" class="btn btn-primary " />
+    </div>
+
+  </form>
+</div>

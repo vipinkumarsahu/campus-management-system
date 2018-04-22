@@ -1,0 +1,142 @@
+[
+    {
+        "name": "Vipin Sahu",
+        "email": "vipin@gmail.com",
+        "contact": "7766778899",
+        "batch": "2014",
+        "branch": "IT"
+    },
+    {
+        "name": "Ankit Kumar",
+        "email": "ankit@gmail.com",
+        "contact": "7766778890",
+        "batch": "2014",
+        "branch": "CS"
+    },
+    {
+        "name": "Manoj",
+        "email": "manoj@gmail.com",
+        "contact": "7766778891",
+        "batch": "2014",
+        "branch": "IT"
+    },
+    {
+        "name": "Raghav",
+        "email": "raghav@gmail.com",
+        "contact": "7766778892",
+        "batch": "2014",
+        "branch": "CS"
+    },
+    {
+        "name": "Rajat Chattopadhyay",
+        "email": "rajat@gmail.com",
+        "contact": "7766778893",
+        "batch": "2014",
+        "branch": "CS"
+    },
+    {
+        "name": "Vijai Sahu",
+        "email": "vijai@gmail.com",
+        "contact": "7766778099",
+        "batch": "2015",
+        "branch": "CS"
+    },
+    {
+        "name": "Raju Kumar",
+        "email": "raju@gmail.com",
+        "contact": "7766778190",
+        "batch": "2015",
+        "branch": "IT"
+    },
+    {
+        "name": "Himanshu",
+        "email": "Himanshu@gmail.com",
+        "contact": "7766778291",
+        "batch": "2015",
+        "branch": "CS"
+    },
+    {
+        "name": "Rajeev",
+        "email": "rajeev@gmail.com",
+        "contact": "7766778492",
+        "batch": "2015",
+        "branch": "It"
+    },
+    {
+        "name": "Raman Chattopadhyay",
+        "email": "raman@gmail.com",
+        "contact": "7766778593",
+        "batch": "2015",
+        "branch": "CS"
+    },
+    {
+        "name": "Pratiti Sahu",
+        "email": "pratiti@gmail.com",
+        "contact": "7766708899",
+        "batch": "2016",
+        "branch": "IT"
+    },
+    {
+        "name": "Rajni Kumar",
+        "email": "rajni@gmail.com",
+        "contact": "7766718890",
+        "batch": "2016",
+        "branch": "CS"
+    },
+    {
+        "name": "Dherendra",
+        "email": "dherendra@gmail.com",
+        "contact": "7766728891",
+        "batch": "2016",
+        "branch": "IT"
+    },
+    {
+        "name": "Ram",
+        "email": "ram@gmail.com",
+        "contact": "7766738892",
+        "batch": "2016",
+        "branch": "CS"
+    },
+    {
+        "name": "Raaj Chattopadhyay",
+        "email": "raaj@gmail.com",
+        "contact": "7766748893",
+        "batch": "2016",
+        "branch": "IT"
+    },
+    {
+        "name": "Ramesh Sahu",
+        "email": "ramesh@gmail.com",
+        "contact": "7761778899",
+        "batch": "2017",
+        "branch": "IT"
+    },
+    {
+        "name": "Rajnish Kumar",
+        "email": "Rajnish@gmail.com",
+        "contact": "7762778890",
+        "batch": "2017",
+        "branch": "CS"
+    },
+    {
+        "name": "Hari",
+        "email": "hari@gmail.com",
+        "contact": "7764778891",
+        "batch": "2017",
+        "branch": "IT"
+    },
+    {
+        "name": "Ruchi",
+        "email": "ruchi@gmail.com",
+        "contact": "7765778892",
+        "batch": "2017",
+        "branch": "CS"
+    },
+    {
+        "name": "Radhe Chattopadhyay",
+        "email": "radhe@gmail.com",
+        "contact": "7767778893",
+        "batch": "2017",
+        "branch": "IT"
+    }
+]

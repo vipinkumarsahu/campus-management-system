@@ -1,0 +1,21 @@
+<div class="container">
+  <h2>Userdata</h2>
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" #refname class="form-control" formControlName="name" />
+       
+      <div *ngIf="userForm.controls['name'].hasError('required')" class="alert alert-danger">
+        Name field can't be empty
+      </div>
+     <!--  <div *ngIf="userForm.controls['name'].hasError('minlength')" class="alert alert-danger">
+        Name can't be less than 4 charecter
+      </div>
+      <div *ngIf="userForm.controls['name'].hasError('maxlength')" class="alert alert-danger">
+        Name can't not be more than 10 length
+      </div> --> 
+    </div>
+
+    <input type="submit" value="Submit" class="btn btn-primary" />
+  </form>
+</div>

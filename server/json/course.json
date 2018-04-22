@@ -1,0 +1,26 @@
+{
+    "HM301": {
+        "coursename": "Data Anaytics",
+        "coursecode": "HM301"
+    },
+    "HM302": {
+        "coursename": "Computer Networks",
+        "coursecode": "HM302"
+    },
+    "HM303": {
+        "coursename": "Programmin",
+        "coursecode": "HM303"
+    },
+    "HM304": {
+        "coursename": "Economics",
+        "coursecode": "HM304"
+    },
+    "HM305": {
+        "coursename": "DLD",
+        "coursecode": "HM305"
+    },
+    "HM306": {
+        "coursename": "Algebra",
+        "coursecode": "HM306"
+    }
+}

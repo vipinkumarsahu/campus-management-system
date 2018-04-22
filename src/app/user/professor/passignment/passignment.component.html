@@ -1,0 +1,108 @@
+<div class="col-md-12 col-md-offset-0">
+  <form name="form" (ngSubmit)="f.form.valid && register()" #f="ngForm" novalidate>
+    <div class="col-md-4">
+      <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !profession.valid }">
+        <label for="username">Academic Year</label>
+        <select class="form-control" name="profession" [(ngModel)]="model.type" #profession="ngModel" required>
+          <option value="">Choose Academic Year</option>
+          <option value="2014">2013-14</option>
+          <option value="2015">2014-15</option>
+          <option value="2016">2015-16</option>
+          <option value="2017">2016-17</option>
+          <option value="2018">2017-18</option>
+          <option value="2019">2018-19</option>
+        </select>
+        <div *ngIf="f.submitted && !profession.valid" class="help-block">Profession is required</div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !profession.valid }">
+        <label for="username">Branch</label>
+        <select class="form-control" name="profession" [(ngModel)]="model.type" #profession="ngModel" required>
+          <option value="">Choose Branch</option>
+          <option value="CS">CS</option>
+          <option value="IT">IT</option>
+          <option value="EC">EC</option>
+          <option value="ME">ME</option>
+        </select>
+        <div *ngIf="f.submitted && !profession.valid" class="help-block">Profession is required</div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !profession.valid }">
+        <label for="username">Year</label>
+        <select class="form-control" name="profession" [(ngModel)]="model.type" #profession="ngModel" required>
+          <option value="">Choose Year</option>
+          <option value="2014">2014</option>
+          <option value="2015">2015</option>
+          <option value="2016">2016</option>
+          <option value="2017">2017</option>
+          <option value="2018">2018</option>
+          <option value="2019">2019</option>
+        </select>
+        <div *ngIf="f.submitted && !profession.valid" class="help-block">Profession is required</div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !profession.valid }">
+        <label for="username">Semester</label>
+        <select class="form-control" name="profession" [(ngModel)]="model.type" #profession="ngModel" required>
+          <option value="">Choose Semester</option>
+          <option value="1">Semester 1</option>
+          <option value="2">Semester 2</option>
+          <option value="3">Semester 3</option>
+          <option value="4">Semester 4</option>
+        </select>
+        <div *ngIf="f.submitted && !profession.valid" class="help-block">Sementer is required</div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !profession.valid }">
+        <label for="username">Course</label>
+        <select class="form-control" name="profession" [(ngModel)]="model.type" #profession="ngModel" required>
+          <option value="">Choose Course</option>
+          <option value="0">Data Analytics</option>
+          <option value="1">Programming</option>
+          <option value="2">Professonal Ethics</option>
+          <option value="3">Other course</option>
+        </select>
+        <div *ngIf="f.submitted && !profession.valid" class="help-block">Profession is required</div>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <div class="form-group">
+        <label>Message</label>
+
+        <div class="input-group">
+          <div class="input-group-addon">
+            <i class="glyphicon glyphicon-user"></i>
+          </div>
+          <input type="text" class="form-control" data-mask>
+        </div>
+        <!-- /.input group -->
+      </div>
+    </div>
+    <div class="col-md-12">
+      <div class="form-group">
+        <label>Task</label>
+        <input type="text" class="form-control" placeholder="Enter ...">
+      </div>
+    </div>
+    <div class="col-md-12">
+      <div class="form-group fileinput fileinput-new" data-provides="fileinput">
+        <span class="btn btn-default btn-file">
+          <input type="file" />
+        </span>
+        <span class="fileinput-filename"></span>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <div class="form-group">
+        <button [disabled]="loading" class="btn btn-primary">Create Assignment</button>
+        <img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA=="
+        />
+        <a [routerLink]="['/signIn']" class="btn btn-link">Cancel</a>
+      </div>
+    </div>
+  </form>
+</div>

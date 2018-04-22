@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Ajay Nath",
+        "email": "ajaynath@gmail.com",
+        "contact": "7766778899",
+        "education": "Ph.D(Physics)",
+        "university": "DAII-CT",
+        "intrest":"Cigar-shaped Bose-Einstein condensate, Optical Lattices, Solitons, Many-body physics"
+    },
+    {
+        "name": "Ashish Phophaliya",
+        "email": "ashish@gmail.com",
+        "contact": "7766778890",
+        "education": "Ph.D(Information and Communication Technology)",
+        "university": "DAII-CT",
+        "intrest":"Image Processing, Pattern Recognition, Medical Image Analysis. "
+    },
+    {
+        "name": "Barnali Chetia",
+        "email": "barnali@gmail.com",
+        "contact": "7766778891",
+        "education": "Ph.D(Linguistics)",
+        "university": "JNU New Delhi ",
+        "intrest":"Applied Linguistics, Sociolinguistics, Discourse Analysis, Gender Studies, Technical Communication. "
+    },
+    {
+        "name": "Barun Gorain",
+        "email": "barun@gmail.com",
+        "contact": "7766778892",
+        "education": "Ph.D(Computer Science)",
+        "university": "Indian Institute of Technology Guwahati, India. ",
+        "intrest":"Algorithmic aspects of Wireless Sensor Networks, Lower bounds on distributed algorithms"
+    },
+    {
+        "name": "Bhargab Chattopadhyay",
+        "email": "bahrgab@gmail.com",
+        "contact": "7766778893",
+        "education": "Ph.D(Statistics)",
+        "university": "DAII-CT",
+        "intrest":"Statistics."
+    }
+]
