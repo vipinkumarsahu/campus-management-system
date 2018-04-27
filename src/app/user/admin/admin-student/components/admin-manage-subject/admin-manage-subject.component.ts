@@ -22,5 +22,9 @@ export class AdminManageSubjectComponent implements OnInit {
 
   ngOnInit() {
   }
+  
+  onSubmit() {
+    console.log(this.userForm.value);
+  }
 
 }

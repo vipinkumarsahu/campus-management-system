@@ -6,10 +6,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { AppRoutingModule, AppRoutingComponent } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { AuthGuard } from './_guards';
-import { AlertService, AuthenticationService, UserService } from './_services';
+// import { AuthGuard } from './_guards';
+// import { AlertService, AuthenticationService, UserService } from './_services';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
-import { JwtInterceptor, fakeBackendProvider } from './_helpers';
+// import { JwtInterceptor, fakeBackendProvider } from './_helpers';
 // import { ComponentsModule } from './components/components.module';
 
 
@@ -28,18 +28,7 @@ import { JwtInterceptor, fakeBackendProvider } from './_helpers';
     AppRoutingModule
   ],
   providers: [
-    AuthGuard,
-    AlertService,
-    AuthenticationService,
-    UserService,
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: JwtInterceptor,
-      multi: true
-    },
-
-    // provider used to create fake backend
-    fakeBackendProvider
+    
   ],
   bootstrap: [AppComponent]
 })

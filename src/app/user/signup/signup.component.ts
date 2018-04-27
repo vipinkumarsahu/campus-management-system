@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Route, Router } from '@angular/router';
-import { UserService, AlertService } from '../../_services';
+// import { UserService, AlertService } from '../../_services';
 
 @Component({
   selector: 'app-signup',
@@ -13,12 +13,10 @@ export class SignupComponent implements OnInit {
   loading = false;
 
   constructor(
-      private router: Router,
-      private userService: UserService,
-      private alertService: AlertService) { }
+      private router: Router) { }
 
   register() {
-      this.loading = true;
+      /* this.loading = true;
       this.userService.create(this.model)
           .subscribe(
               data => {
@@ -29,7 +27,7 @@ export class SignupComponent implements OnInit {
               error => {
                   this.alertService.error(error);
                   this.loading = false;
-              });
+              }); */
   }
 
   ngOnInit() {

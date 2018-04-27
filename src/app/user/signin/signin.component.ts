@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { AuthenticationService, AlertService } from '../../_services';
+// import { AuthenticationService, AlertService } from '../../_services';
 
 @Component({
   selector: 'app-signin',
@@ -15,27 +15,25 @@ export class SigninComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private router: Router,
-    private authenticationService: AuthenticationService,
-    private alertService: AlertService) { }
+    private router: Router) { }
 
   ngOnInit() {
     // reset login status
-    this.authenticationService.logout();
+    // this.authenticationService.logout();
 
     // get return url from route parameters or default to '/'
     this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || 'student';
   }
 
   login() {
-    debugger
+    /* debugger
     this.loading = true;
     this.authenticationService.login(this.model.username, this.model.password)
       .subscribe(
         data => {
-          let url= "user";
+          let url = "user";
           if (data.type === '0') {
-            url += '/student'; 
+            url += '/student';
           } else if (data.type === '1') {
             url += '/professor'
           } else {
@@ -46,6 +44,6 @@ export class SigninComponent implements OnInit {
         error => {
           this.alertService.error(error);
           this.loading = false;
-        });
+        }); */
   }
 }
