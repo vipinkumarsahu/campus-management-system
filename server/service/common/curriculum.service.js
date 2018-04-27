@@ -64,11 +64,11 @@ module.exports.deleteCourse = async function (data) {
 
 //delete brnach
 
-module.exports.deleteBranch = async function(data){
-    try{
-        let deletebranch = await subjectModel.findByIdAndRemove({'_id':data});
+module.exports.deleteBranch = async function (data) {
+    try {
+        let deletebranch = await subjectModel.findByIdAndRemove({ '_id': data });
         return deletebranch;
-    }catch(error){
+    } catch (error) {
         throw error;
     }
 }
