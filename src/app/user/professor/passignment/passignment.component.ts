@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-pchat',
-  templateUrl: './Passignment.component.html',
-  styleUrls: ['./Passignment.component.scss']
+  templateUrl: './passignment.component.html',
+  styleUrls: ['./passignment.component.scss']
 })
 export class PassignmentComponent implements OnInit {
 
