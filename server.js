@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 const db = require('./server/db');
- 
+
 const routes = require('./server/routes');
 
 const port = 4200;
